@@ -14,6 +14,19 @@ public class ValidateResponse {
 
         /* Now let store complete test in response String and then validate
         use extract string here
+Test Scenario: Verify the post Api call and then use put reqquest and then use get request
+Given I input BaseURI, queryParam key, header, body
+When I perform post request with resources
+Then I should verify status code 200
+And scope is equal to APP
+And server I reterive data is Apache/2.4.18 (unbutu)
+And I input queryParam, and updated address in body
+When I perform put request with resources
+Then I should get successfull massage 
+And I input queryParam key and queryParam placeid
+When I perform get request with resources
+Then I should verify address reterive is equal to new address
+
          */
         Paylod paylod = new Paylod();
         @Test
